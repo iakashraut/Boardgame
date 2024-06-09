@@ -112,6 +112,10 @@
             </goals>
         </execution>
     </executions>
+    <configuration>
+        <destFile>${project.build.directory}/jacoco.exec</destFile>
+        <append>true</append>
+    </configuration>
 </plugin>
 		</plugins>
 	</build>
