@@ -116,6 +116,9 @@
         <destFile>${project.build.directory}/jacoco.exec</destFile>
         <append>true</append>
     </configuration>
+<properties>
+    <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+</properties>				
 </plugin>
 		</plugins>
 	</build>
