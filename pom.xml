@@ -23,6 +23,9 @@
     		<sonar.language>java</sonar.language>
 		
 	</properties>
+	<properties>
+            <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        </properties>
 
 	<dependencies>
 		<dependency>
@@ -116,9 +119,7 @@
         <destFile>${project.build.directory}/jacoco.exec</destFile>
         <append>true</append>
     </configuration>
-<properties>
-    <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-</properties>				
+				
 </plugin>
 		</plugins>
 	</build>
